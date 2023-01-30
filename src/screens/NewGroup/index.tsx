@@ -1,26 +1,26 @@
-import { Button } from '@components/Button';
-import { Header } from '@components/Header';
-import { Highlight } from '@components/Highlight';
-import { Container, Content, Icon } from './styles'
+import { Button } from "@components/Button";
+import { Header } from "@components/Header";
+import { Highlight } from "@components/Highlight";
+import { Input } from "@components/input";
+import { Container, Content, Icon } from "./styles";
 
-export function NewGroup(){
-    return(
-        <Container>
-            <Header showBackButton />
-            <Content>
-                <Icon />
-                <Highlight 
-                title="Nova Turma"
-                subtitle='crie a turma para adicionar as pessoas'
-                />
+export function NewGroup() {
+  return (
+    <Container>
+      <Header showBackButton />
+      <Content>
+        <Icon />
+        <Highlight
+          title="Nova Turma"
+          subtitle="crie a turma para adicionar as pessoas"
+        />
 
-                <Button 
-                title='Criar'
-                />
+        <Input 
+        placeholder="Nome da Turma"
+        />
 
-            </Content>
-            
-        </Container>
-
-    );
+        <Button title="Criar" style={{ marginTop: 20 }} />
+      </Content>
+    </Container>
+  );
 }
